@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <!-- Meta tags per responsività e charset -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'Azienda - Esperienza di Stage</title>
+  <!-- Link al CSS esterno -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ================================================
+       MENU DI NAVIGAZIONE PRINCIPALE
+       ================================================ -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="chi-siamo.html">L'Azienda</a></li>
+      <li><a href="mansioni.html">Mansioni</a></li>
+      <li><a href="diario.html">Diario</a></li>
+      <li><a href="contatti.html">Contatti</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>L'Azienda</h1>
+
+    <!-- ================================================
+         SEZIONE 1: CHI SIAMO
+         Presentazione generale dell'azienda
+         ================================================ -->
+    <section>
+      <h2>Chi Siamo</h2>
+      <p>
+        La nostra azienda è una realtà consolidata nel settore dell'Information Technology, 
+        con più di 20 anni di esperienza nel fornire soluzioni innovative e su misura 
+        per imprese di ogni dimensione. Ci occupiamo di sviluppo software, consulenza IT, 
+        infrastrutture cloud e trasformazione digitale.
+      </p>
+      <p>
+        Con sede principale a Milano e uffici in diverse città, contiamo su un team 
+        multidisciplinare di professionisti appassionati che lavorano ogni giorno 
+        per superare le aspettative dei nostri clienti.
+      </p>
+    </section>
+
+    <!-- ================================================
+         SEZIONE 2: STORIA E SETTORE PRODUTTIVO
+         3 card con storia, settore, valori aziendali
+         ================================================ -->
+    <section>
+      <h2>Storia e Settore Produttivo</h2>
+      
+      <div class="card-container">
+        <div class="card">
+          <h3>📖 La Nostra Storia</h3>
+          <p>
+            Fondata nel 2004 da un gruppo di esperti informatici, la nostra azienda 
+            ha saputo evolvere costantemente adattandosi alle tecnologie emergenti. 
+            Dai primi progetti di database ai sistemi cloud moderni, il nostro percorso 
+            riflette l'innovazione continua nel settore ICT.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>💼 Settore di Attività</h3>
+          <p>
+            Operiamo principalmente nel settore IT e Digital Services con specializzazione in:
+          </p>
+          <ul style="list-style-position: inside; line-height: 1.8;">
+            <li>Sviluppo software custom e web applications</li>
+            <li>Soluzioni cloud (AWS, Azure, Google Cloud)</li>
+            <li>Cyber security e protezione dati</li>
+            <li>Consulenza e strategia digitale</li>
+            <li>Data analytics e big data</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>🌟 Valori Aziendali</h3>
+          <p>
+            Nel nostro ambiente lavoriamo secondo principi fondamentali:
+          </p>
+          <ul style="list-style-position: inside; line-height: 1.8;">
+            <li><strong>Innovazione:</strong> ricerca continua di soluzioni avanzate</li>
+            <li><strong>Qualità:</strong> eccellenza in ogni progetto</li>
+            <li><strong>Collaborazione:</strong> lavoro di team e partnership</li>
+            <li><strong>Sostenibilità:</strong> responsabilità ambientale</li>
+            <li><strong>Integrità:</strong> etica e trasparenza</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         SEZIONE 3: GALLERY FOTOGRAFICA
+         6 immagini con didascalia usando <figure>
+         ================================================ -->
+    <section>
+      <h2>Galleria Fotografica</h2>
+      <p>Scorri le nostre strutture e ambienti di lavoro:</p>
+      
+      <div class="gallery">
+        <div class="gallery-item">
+          <figure>
+            <img src="https://via.placeholder.com/400x300?text=Uffici+Moderni" alt="Uffici Moderni">
+            <figcaption>Spazi ufficio open-space progettati per la collaborazione</figcaption>
+          </figure>
+        </div>
+
+        <div class="gallery-item">
+          <figure>
+            <img src="https://via.placeholder.com/400x300?text=Laboratorio+Tecnico" alt="Laboratorio">
+            <figcaption>Laboratorio tecnico con server e infrastrutture</figcaption>
+          </figure>
+        </div>
+
+        <div class="gallery-item">
+          <figure>
+            <img src="https://via.placeholder.com/400x300?text=Sala+Riunioni" alt="Sala Riunioni">
+            <figcaption>Sala meeting equipaggiata con tecnologie collaborative</figcaption>
+          </figure>
+        </div>
+
+        <div class="gallery-item">
+          <figure>
+            <img src="https://via.placeholder.com/400x300?text=Area+Relax" alt="Area Relax">
+            <figcaption>Area relax per i momenti di pausa</figcaption>
+          </figure>
+        </div>
+
+        <div class="gallery-item">
+          <figure>
+            <img src="https://via.placeholder.com/400x300?text=Prodotti+Software" alt="Prodotti">
+            <figcaption>Alcuni dei nostri principali prodotti software</figcaption>
+          </figure>
+        </div>
+
+        <div class="gallery-item">
+          <figure>
+            <img src="https://via.placeholder.com/400x300?text=Team+Aziendale" alt="Team">
+            <figcaption>Il nostro team multidisciplinare</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         SEZIONE 4: UBICAZIONE E MAPPA INTERATTIVA
+         Google Maps iframe embed responsive
+         ================================================ -->
+    <section>
+      <h2>Dove Siamo</h2>
+      <p>
+        La nostra sede principale si trova nel cuore di Milano, facilmente raggiungibile 
+        dai principali mezzi di trasporto. L'ubicazione strategica ci permette di essere 
+        sempre connessi con il mercato e con i nostri clienti.
+      </p>
+      
+      <!-- Mappa interattiva Google Maps -->
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.5489506851307!2d9.185836!3d45.48245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c11f5d5d5d5d%3A0x1234567890abcdef!2sMilano%2C%20MI!5e0!3m2!1sit!2sit!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <!-- ================================================
+         SEZIONE 5: NUMERI AZIENDALI
+         Tabella con statistiche chiave dell'azienda
+         ================================================ -->
+    <section>
+      <h2>I Numeri dell'Azienda</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Metrica</th>
+            <th>Valore</th>
+            <th>Descrizione</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Anni di Attività</strong></td>
+            <td>22 anni</td>
+            <td>Dalla fondazione nel 2004</td>
+          </tr>
+          <tr>
+            <td><strong>Dipendenti</strong></td>
+            <td>120+</td>
+            <td>Tra Italia e estero</td>
+          </tr>
+          <tr>
+            <td><strong>Clienti Soddisfatti</strong></td>
+            <td>500+</td>
+            <td>Dalle PMI alle grandi corporation</td>
+          </tr>
+          <tr>
+            <td><strong>Progetti Completati</strong></td>
+            <td>1500+</td>
+            <td>Soluzioni implementate con successo</td>
+          </tr>
+          <tr>
+            <td><strong>Sedi Operative</strong></td>
+            <td>5</td>
+            <td>Milano, Roma, Bologna, Torino, Università</td>
+          </tr>
+          <tr>
+            <td><strong>Certificazioni ISO</strong></td>
+            <td>ISO 27001, ISO 9001</td>
+            <td>Sicurezza e qualità garantite</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- ================================================
+       FOOTER
+       ================================================ -->
+  <footer>
+    <p>&copy; 2026 Esperienza di Stage - Istituto Tecnico Superiore Erasmo da Bollate</p>
+  </footer>
+</body>
+</html>
+      <p>
+        La nostra azienda è una realtà consolidata nel settore dell'Information Technology, 
+        con più di 20 anni di esperienza nel fornire soluzioni innovative e su misura 
+        per imprese di ogni dimensione. Ci occupiamo di sviluppo software, consulenza IT, 
+        infrastrutture cloud e trasformazione digitale.
+      </p>
+      <p>
+        Con sede principale a Milano e uffici in diverse città, contiamo su un team 
+        multidisciplinare di professionisti appassionati che lavorano ogni giorno 
+        per superare le aspettative dei nostri clienti.
+      </p>
+    </section>
+
+    <!-- Company History and Sector -->
+    <section>
+      <h2>Storia e Settore Produttivo</h2>
+      
+      <div class="card-container">
+        <div class="card">
+          <h3>📖 La Nostra Storia</h3>
+          <p>
+            Fondata nel 2004 da un gruppo di esperti informatici, la nostra azienda 
+            ha saputo evolvere costantemente adattandosi alle tecnologie emergenti. 
+            Dai primi progetti di database ai sistemi cloud moderni, il nostro percorso 
+            riflette l'innovazione continua nel settore ICT.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>💼 Settore di Attività</h3>
+          <p>
+            Operiamo principalmente nel settore IT e Digital Services con specializzazione in:
+          </p>
+          <ul style="list-style-position: inside; line-height: 1.8;">
+            <li>Sviluppo software custom e web applications</li>
+            <li>Soluzioni cloud (AWS, Azure, Google Cloud)</li>
+            <li>Cyber security e protezione dati</li>
+            <li>Consulenza e strategia digitale</li>
+            <li>Data analytics e big data</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>🌟 Valori Aziendali</h3>
+          <p>
+            Nel nostro ambiente lavoriamo secondo principi fondamentali:
+          </p>
+          <ul style="list-style-position: inside; line-height: 1.8;">
+            <li><strong>Innovazione:</strong> ricerca continua di soluzioni avanzate</li>
+            <li><strong>Qualità:</strong> eccellenza in ogni progetto</li>
+            <li><strong>Collaborazione:</strong> lavoro di team e partnership</li>
+            <li><strong>Sostenibilità:</strong> responsabilità ambientale</li>
+            <li><strong>Integrità:</strong> etica e trasparenza</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section>
+      <h2>Galleria Fotografica</h2>
+      <p>Scorri le nostre strutture e ambienti di lavoro:</p>
+      
+      <div class="gallery">
+        <div class="gallery-item">
+          <figure>
+            <img src="https://via.placeholder.com/400x300?text=Uffici+Moderni" alt="Uffici Moderni">
+            <figcaption>Spazi ufficio open-space progettati per la collaborazione</figcaption>
+          </figure>
+        </div>
+
+        <div class="gallery-item">
+          <figure>
+            <img src="https://via.placeholder.com/400x300?text=Laboratorio+Tecnico" alt="Laboratorio">
+            <figcaption>Laboratorio tecnico con server e infrastrutture</figcaption>
+          </figure>
+        </div>
+
+        <div class="gallery-item">
+          <figure>
+            <img src="https://via.placeholder.com/400x300?text=Sala+Riunioni" alt="Sala Riunioni">
+            <figcaption>Sala meeting equipaggiata con tecnologie collaborative</figcaption>
+          </figure>
+        </div>
+
+        <div class="gallery-item">
+          <figure>
+            <img src="https://via.placeholder.com/400x300?text=Area+Relax" alt="Area Relax">
+            <figcaption>Area relax per i momenti di pausa</figcaption>
+          </figure>
+        </div>
+
+        <div class="gallery-item">
+          <figure>
+            <img src="https://via.placeholder.com/400x300?text=Prodotti+Software" alt="Prodotti">
+            <figcaption>Alcuni dei nostri principali prodotti software</figcaption>
+          </figure>
+        </div>
+
+        <div class="gallery-item">
+          <figure>
+            <img src="https://via.placeholder.com/400x300?text=Team+Aziendale" alt="Team">
+            <figcaption>Il nostro team multidisciplinare</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location -->
+    <section>
+      <h2>Dove Siamo</h2>
+      <p>
+        La nostra sede principale si trova nel cuore di Milano, facilmente raggiungibile 
+        dai principali mezzi di trasporto. L'ubicazione strategica ci permette di essere 
+        sempre connessi con il mercato e con i nostri clienti.
+      </p>
+      
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.5489506851307!2d9.185836!3d45.48245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c11f5d5d5d5d%3A0x1234567890abcdef!2sMilano%2C%20MI!5e0!3m2!1sit!2sit!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <!-- Company Stats -->
+    <section>
+      <h2>I Numeri dell'Azienda</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Metrica</th>
+            <th>Valore</th>
+            <th>Descrizione</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Anni di Attività</strong></td>
+            <td>22 anni</td>
+            <td>Dalla fondazione nel 2004</td>
+          </tr>
+          <tr>
+            <td><strong>Dipendenti</strong></td>
+            <td>120+</td>
+            <td>Tra Italia e estero</td>
+          </tr>
+          <tr>
+            <td><strong>Clienti Soddisfatti</strong></td>
+            <td>500+</td>
+            <td>Dalle PMI alle grandi corporation</td>
+          </tr>
+          <tr>
+            <td><strong>Progetti Completati</strong></td>
+            <td>1500+</td>
+            <td>Soluzioni implementate con successo</td>
+          </tr>
+          <tr>
+            <td><strong>Sedi Operative</strong></td>
+            <td>5</td>
+            <td>Milano, Roma, Bologna, Torino, Università</td>
+          </tr>
+          <tr>
+            <td><strong>Certificazioni ISO</strong></td>
+            <td>ISO 27001, ISO 9001</td>
+            <td>Sicurezza e qualità garantite</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Esperienza di Stage - Istituto Tecnico Superiore Erasmo da Bollate</p>
+  </footer>
+</body>
+</html>

@@ -1,47 +1,162 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Il mio sito GitHub Pages</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        header {
-            background-color: #f4f4f4;
-            padding: 20px;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        footer {
-            background-color: #f4f4f4;
-            padding: 10px;
-            text-align: center;
-            margin-top: 20px;
-        }
-    </style>
+  <!-- Meta tags per charset e viewport responsive -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Esperienza di Stage</title>
+  <!-- Link al foglio di stile CSS esterno -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Benvenuto nel mio sito </h1>
-    </header>
-    
-    <main>
-        <h2>Chi sono: Studente nella scuola Erasmo da Rotterdam a Bollate</h2>
-        
-        <h2>I miei progetti</h2>
-        <p>Qui elencherò i miei progetti futuri.</p>
-        <a href="ES_01/index.html">Esercitazione 01 - Scp 173</a>
-    </main>
-    
-    <footer>
-        <p>&copy; 2025 Il mio sito GitHub Pages</p>
-    </footer>
+  <!-- ================================================
+       MENU DI NAVIGAZIONE FISSO
+       Menu orizzontale con 5 pagine collegate
+       ================================================ -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="chi-siamo.html">L'Azienda</a></li>
+      <li><a href="mansioni.html">Mansioni</a></li>
+      <li><a href="diario.html">Diario</a></li>
+      <li><a href="contatti.html">Contatti</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- ================================================
+         HEADER - IDENTITÀ VISIVA
+         Logo scuola e azienda affiancati con titolo
+         ================================================ -->
+    <section class="header">
+      <div class="header-content">
+        <div class="header-logos">
+          <!-- Logo scuola e azienda -->
+          <img src="https://via.placeholder.com/60x60?text=Logo+Scuola" alt="Logo Scuola">
+          <img src="https://via.placeholder.com/60x60?text=Logo+Azienda" alt="Logo Azienda">
+        </div>
+        <div>
+          <h1>Esperienza di Stage</h1>
+          <p><strong>Classe:</strong> 4ᴬ Informatica</p>
+          <p><strong>Periodo:</strong> Gennaio - Marzo 2026</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         IMMAGINE HEADER
+         Foto ingresso aziendale con didascalia
+         ================================================ -->
+    <figure>
+      <img src="https://via.placeholder.com/1000x400?text=Ingresso+Azienda" alt="Ingresso Aziendale" class="header-image">
+      <figcaption>L'ingresso principale della sede aziendale</figcaption>
+    </figure>
+
+    <!-- ================================================
+         PRESENTAZIONE DELLO STUDENTE
+         Card con presentazione, classe e durata
+         ================================================ -->
+    <section>
+      <h2>Presentazione dello Studente</h2>
+      
+      <div class="card-container">
+        <div class="card">
+          <h3>Chi Sono</h3>
+          <p>
+            Sono uno studente dell'Istituto Tecnico Superiore Erasmo da Bollate, 
+            indirizzo Informatica. Appassionato di tecnologia e sviluppo software, 
+            ho intrapreso questo percorso di stage per approfondire le competenze 
+            pratiche nel settore ICT e comprendere meglio il mondo del lavoro.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Classe e Indirizzo</h3>
+          <p>
+            <strong>Istituto:</strong> Erasmo da Bollate<br>
+            <strong>Indirizzo:</strong> Informatica<br>
+            <strong>Classe:</strong> 4ᴬ<br>
+            <strong>Anno Scolastico:</strong> 2025-2026
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Durata dello Stage</h3>
+          <p>
+            <strong>Inizio:</strong> 20 Gennaio 2026<br>
+            <strong>Fine:</strong> 31 Marzo 2026<br>
+            <strong>Durata Totale:</strong> 10 settimane<br>
+            <strong>Orario:</strong> 8:30 - 16:30
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         OBIETTIVI PREFISSATI
+         3 card con obiettivi tecnici, professionali, formativi
+         ================================================ -->
+    <section>
+      <h2>Obiettivi Prefissati</h2>
+      <div class="card-container">
+        <div class="card">
+          <h3>🎯 Obiettivi Tecnici</h3>
+          <ul style="list-style-position: inside; line-height: 2;">
+            <li>Apprendere tecnologie enterprise utilizzate in produzione</li>
+            <li>Sviluppare competenze di programmazione avanzata</li>
+            <li>Imparare il ciclo di vita del software (SDLC)</li>
+            <li>Acquisire esperienza con strumenti di versioning e CI/CD</li>
+            <li>Comprendere best practices di sicurezza informatica</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>💼 Obiettivi Professionali</h3>
+          <ul style="list-style-position: inside; line-height: 2;">
+            <li>Sviluppare competenze di lavoro in team</li>
+            <li>Imparare a comunicare efficacemente con i colleghi</li>
+            <li>Comprendere le responsabilità nel contesto aziendale</li>
+            <li>Acquisire capacità di problem-solving</li>
+            <li>Valutare le proprie inclinazioni professionali future</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>📚 Obiettivi Formativi</h3>
+          <ul style="list-style-position: inside; line-height: 2;">
+            <li>Collegare teoria scolastica con pratica professionale</li>
+            <li>Approfondire materie studiate in classe</li>
+            <li>Scoprire nuove aree dell'informatica</li>
+            <li>Sviluppare autonomia e autodisciplina</li>
+            <li>Creare portfolio di progetti concreti</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         ASPETTATIVE E RISULTATI
+         Paragrafo di conclusione della home
+         ================================================ -->
+    <section>
+      <h2>Aspettative e Risultati Attesi</h2>
+      <p>
+        Durante questo stage presso l'azienda, mi aspetto di acquisire competenze pratiche 
+        che completino la mia formazione scolastica. In particolare, desidero comprendere 
+        come i principi informatici studiati in classe si applicano in scenari reali e complessi. 
+        Spero di tornare a scuola con una visione più consapevole del mio percorso professionale 
+        futuro e con esperienze concrete da condividere con i compagni.
+      </p>
+    </section>
+  </main>
+
+  <!-- ================================================
+       FOOTER
+       Informazioni copyright e link contatti
+       ================================================ -->
+  <footer>
+    <p>&copy; 2026 Esperienza di Stage - Istituto Tecnico Superiore Erasmo da Bollate | 
+    <a href="mailto:info@example.com">Contattami</a></p>
+  </footer>
 </body>
 </html>
