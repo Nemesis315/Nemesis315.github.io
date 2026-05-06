@@ -5,14 +5,16 @@
    ================================================ */
 
 /* Reset globale dei margini e padding */
-* {
+* 
+{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 /* Stili base per il body */
-body {
+body 
+{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   color: #333;
@@ -24,7 +26,8 @@ body {
    Menu principale orizzontale con Flexbox
    ================================================ */
 /* Navigation Bar - Fixed */
-nav {
+nav 
+{
   position: fixed;
   top: 0;
   width: 100%;
@@ -35,7 +38,8 @@ nav {
 }
 
 /* Lista di menu con Flexbox layout */
-nav ul {
+nav ul 
+{
   display: flex;
   justify-content: space-around;
   list-style: none;
@@ -45,7 +49,8 @@ nav ul {
 }
 
 /* Link di navigazione con hover effect */
-nav a {
+nav a 
+{
   color: white;
   text-decoration: none;
   font-size: 1.1rem;
@@ -55,7 +60,8 @@ nav a {
 }
 
 /* Effetto hover sui link (scale + background) */
-nav a:hover {
+nav a:hover 
+{
   background-color: #3498db;
   border-radius: 5px;
   transform: scale(1.05);
@@ -66,7 +72,8 @@ nav a:hover {
    Layout del main con rispetto della nav fissa
    ================================================ */
 /* Main Content Area */
-main {
+main 
+{
   margin-top: 80px;
   max-width: 1200px;
   margin-left: auto;
@@ -79,7 +86,8 @@ main {
    Gradient background con logo e presentazione
    ================================================ */
 /* Header Section */
-.header {
+.header 
+{
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   padding: 2rem;
@@ -89,7 +97,8 @@ main {
 }
 
 /* Layout flessibile per header content */
-.header-content {
+.header-content 
+{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -98,14 +107,16 @@ main {
 }
 
 /* Contenitore per i logo */
-.header-logos {
+.header-logos 
+{
   display: flex;
   gap: 1.5rem;
   align-items: center;
 }
 
 /* Stile logo con background bianco */
-.header-logos img {
+.header-logos img 
+{
   height: 60px;
   width: auto;
   background: white;
@@ -114,7 +125,8 @@ main {
 }
 
 /* Immagine large dell'header */
-.header-image {
+.header-image 
+{
   width: 100%;
   max-width: 100%;
   height: auto;
@@ -127,28 +139,33 @@ main {
    Stili per headings, paragrafi e testo
    ================================================ */
 /* Typography */
-h1, h2, h3 {
+h1, h2, h3 
+{
   color: #2c3e50;
   margin: 1.5rem 0 1rem 0;
 }
 
-h1 {
+h1 
+{
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
 }
 
-h2 {
+h2 
+{
   font-size: 2rem;
   border-bottom: 3px solid #3498db;
   padding-bottom: 0.5rem;
 }
 
-h3 {
+h3 
+{
   font-size: 1.5rem;
   color: #34495e;
 }
 
-p {
+p 
+{
   margin-bottom: 1rem;
   text-align: justify;
 }
@@ -158,7 +175,8 @@ p {
    Grid responsive per cards contenitore
    ================================================ */
 /* Cards Layout */
-.card-container {
+.card-container 
+{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
@@ -166,7 +184,8 @@ p {
 }
 
 /* Card singola con shadow e hover */
-.card {
+.card 
+{
   background: white;
   padding: 1.5rem;
   border-radius: 10px;
@@ -175,13 +194,15 @@ p {
 }
 
 /* Effetto hover card (lift + shadow) */
-.card:hover {
+.card:hover 
+{
   transform: translateY(-5px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
 /* Card speciale per "Top Day" del diario */
-.top-day-card {
+.top-day-card 
+{
   background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
   color: white;
   grid-column: 1 / -1;
@@ -189,7 +210,8 @@ p {
   border-radius: 10px;
 }
 
-.top-day-card h3 {
+.top-day-card h3 
+{
   color: white;
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
 }
@@ -200,13 +222,15 @@ p {
    Hover effect con scale e shadow
    ================================================ */
 /* Figure and Images */
-figure {
+figure 
+{
   margin: 1.5rem 0;
   text-align: center;
 }
 
 /* Immagini responsive con hover */
-figure img {
+figure img 
+{
   width: 100%;
   max-width: 100%;
   height: auto;
@@ -216,13 +240,15 @@ figure img {
 }
 
 /* Hover effect per ingrandire immagine */
-figure img:hover {
+figure img:hover 
+{
   transform: scale(1.05);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* Didascalia foto elegante */
-figcaption {
+figcaption 
+{
   margin-top: 0.8rem;
   font-size: 0.95rem;
   color: #666;
@@ -238,7 +264,8 @@ figcaption {
    Stile professionale con hover effetto
    ================================================ */
 /* Tables */
-table {
+table 
+{
   width: 100%;
   border-collapse: collapse;
   margin: 2rem 0;
@@ -249,30 +276,35 @@ table {
 }
 
 /* Header tabella scuro */
-thead {
+thead 
+{
   background-color: #2c3e50;
   color: white;
 }
 
-th {
+th 
+{
   padding: 1rem;
   text-align: left;
   font-weight: 600;
 }
 
 /* Celle tabella */
-td {
+td 
+{
   padding: 1rem;
   border-bottom: 1px solid #ecf0f1;
 }
 
 /* Hover sulle righe */
-tbody tr:hover {
+tbody tr:hover 
+{
   background-color: #f0f8ff;
   transition: all 0.3s ease;
 }
 
-tbody tr:last-child td {
+tbody tr:last-child td 
+{
   border-bottom: none;
 }
 
@@ -281,7 +313,8 @@ tbody tr:last-child td {
    Griglia responsive per foto gallery
    ================================================ */
 /* Gallery */
-.gallery {
+.gallery 
+{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
@@ -289,7 +322,8 @@ tbody tr:last-child td {
 }
 
 /* Item gallery singolo */
-.gallery-item {
+.gallery-item 
+{
   position: relative;
   overflow: hidden;
   border-radius: 8px;
@@ -297,14 +331,16 @@ tbody tr:last-child td {
 }
 
 /* Immagine gallery con hover effetto */
-.gallery-item img {
+.gallery-item img 
+{
   width: 100%;
   height: 250px;
   object-fit: cover;
   transition: all 0.3s ease;
 }
 
-.gallery-item:hover img {
+.gallery-item:hover img 
+{
   transform: scale(1.1);
   filter: brightness(0.8);
 }
@@ -314,18 +350,21 @@ tbody tr:last-child td {
    Stili per buttons e link hover
    ================================================ */
 /* Buttons and Links */
-a {
+a 
+{
   color: #3498db;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
-a:hover {
+a:hover 
+{
   color: #2980b9;
   text-decoration: underline;
 }
 
-button, .btn {
+button, .btn 
+{
   background-color: #3498db;
   color: white;
   padding: 0.8rem 1.5rem;
@@ -338,7 +377,8 @@ button, .btn {
   text-decoration: none;
 }
 
-button:hover, .btn:hover {
+button:hover, .btn:hover 
+{
   background-color: #2980b9;
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -349,7 +389,8 @@ button:hover, .btn:hover {
    Stili per input, textarea e validazione
    ================================================ */
 /* Contact Form */
-.contact-form {
+.contact-form 
+{
   background: white;
   padding: 2rem;
   border-radius: 10px;
@@ -362,7 +403,8 @@ button:hover, .btn:hover {
   margin-bottom: 1.5rem;
 }
 
-.form-group label {
+.form-group label 
+{
   display: block;
   margin-bottom: 0.5rem;
   font-weight: 600;
@@ -370,7 +412,8 @@ button:hover, .btn:hover {
 }
 
 .form-group input,
-.form-group textarea {
+.form-group textarea 
+{
   width: 100%;
   padding: 0.8rem;
   border: 1px solid #bdc3c7;
@@ -381,7 +424,8 @@ button:hover, .btn:hover {
 
 /* Focus state per input */
 .form-group input:focus,
-.form-group textarea:focus {
+.form-group textarea:focus 
+{
   outline: none;
   border-color: #3498db;
   box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
@@ -392,14 +436,16 @@ button:hover, .btn:hover {
    Contenitore responsive per mappa interattiva
    ================================================ */
 /* Iframes - Google Maps */
-.map-container {
+.map-container 
+{
   margin: 2rem 0;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.map-container iframe {
+.map-container iframe 
+{
   width: 100%;
   height: 400px;
   border: none;
@@ -410,7 +456,8 @@ button:hover, .btn:hover {
    Stile piè di pagina moderno e strutturato
    ================================================ */
 /* Footer */
-footer {
+footer 
+{
   background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
   color: white;
   padding: 1.8rem 1rem 1.2rem 1rem;
@@ -420,7 +467,8 @@ footer {
 }
 
 /* Contenitore per le sezioni del footer */
-.footer-content {
+.footer-content 
+{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
@@ -430,7 +478,8 @@ footer {
 }
 
 /* Singola sezione del footer */
-.footer-section {
+.footer-section 
+{
   padding: 0.8rem;
   border-radius: 8px;
   transition: all 0.3s ease;
@@ -438,14 +487,16 @@ footer {
 }
 
 /* Hover effect sulle sezioni */
-.footer-section:hover {
+.footer-section:hover 
+{
   background-color: rgba(52, 152, 219, 0.15);
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Titoli dentro il footer */
-.footer-section h4 {
+.footer-section h4 
+{
   font-size: 1rem;
   margin-bottom: 0.6rem;
   color: #3498db;
@@ -453,14 +504,16 @@ footer {
 }
 
 /* Paragrafi nel footer */
-.footer-section p {
+.footer-section p 
+{
   font-size: 0.85rem;
   line-height: 1.5;
   margin-bottom: 0.3rem;
 }
 
 /* Divider visuale */
-.footer-divider {
+.footer-divider 
+{
   height: 2px;
   background: linear-gradient(90deg, transparent, #3498db, transparent);
   margin: 1rem auto;
@@ -468,14 +521,16 @@ footer {
 }
 
 /* Footer bottom con copyright */
-.footer-bottom {
+.footer-bottom 
+{
   text-align: center;
   padding-top: 0.8rem;
   font-size: 0.8rem;
   color: #bdc3c7;
 }
 
-footer a {
+footer a 
+{
   color: #3498db;
   text-decoration: none;
   font-weight: 500;
@@ -485,25 +540,30 @@ footer a {
   border-radius: 4px;
 }
 
-footer a:hover {
+footer a:hover 
+{
   color: #2980b9;
   background-color: rgba(52, 152, 219, 0.2);
   transform: scale(1.05);
 }
 
 /* Responsive per mobile */
-@media (max-width: 768px) {
-  footer {
+@media (max-width: 768px) 
+{
+  footer 
+  {
     padding: 2rem 1rem 1.5rem 1rem;
     margin-top: 3rem;
   }
   
-  .footer-content {
+  .footer-content 
+  {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
   
-  .footer-section {
+  .footer-section 
+  {
     padding: 1.2rem;
   }
 }
@@ -514,88 +574,109 @@ footer a:hover {
    ================================================ */
 
 /* Breakpoint per tablet (768px) */
-@media (max-width: 768px) {
-  nav ul {
+@media (max-width: 768px) 
+{
+  nav ul 
+  {
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  h1 {
+  h1 
+  {
     font-size: 1.8rem;
   }
 
-  h2 {
+  h2 
+  {
     font-size: 1.5rem;
   }
 
-  .header-content {
+  .header-content 
+  {
     flex-direction: column;
   }
 
-  .header-logos {
+  .header-logos 
+  {
     justify-content: center;
   }
 
-  .card-container {
+  .card-container 
+  {
     grid-template-columns: 1fr;
   }
 
-  .top-day-card {
+  .top-day-card 
+  {
     grid-column: 1;
   }
 
-  main {
+  main 
+  {
     padding: 1rem;
   }
 
-  table {
+  table 
+  {
     font-size: 0.9rem;
   }
 
-  th, td {
+  th, td 
+  {
     padding: 0.7rem;
   }
 
-  .map-container iframe {
+  .map-container iframe 
+  {
     height: 300px;
   }
 
-  nav a {
+  nav a 
+  {
     font-size: 0.9rem;
     padding: 0.4rem 0.8rem;
   }
 }
 
 /* Breakpoint per mobile (480px) */
-@media (max-width: 480px) {
-  nav ul {
+@media (max-width: 480px) 
+{
+  nav ul 
+  {
     flex-direction: column;
     gap: 0.5rem;
   }
 
-  nav a {
+  nav a 
+  {
     font-size: 0.85rem;
     padding: 0.3rem 0.5rem;
   }
 
-  h1 {
+  h1 
+  {
     font-size: 1.5rem;
   }
 
-  main {
+  main 
+  {
     margin-top: 120px;
     padding: 0.5rem;
   }
 
-  .header {
+  .header 
+  {
     padding: 1rem;
   }
 
-  .gallery {
+  .gallery
+  {
     grid-template-columns: 1fr;
   }
 
-  .gallery-item img {
+  .gallery-item img
+  {
     height: 200px;
   }
 }
