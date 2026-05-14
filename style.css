@@ -112,14 +112,19 @@ main
   display: flex;
   gap: 1.5rem;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 /* Stile logo con background bianco */
 .header-logos img 
 {
-  height: 100px;
-  width: auto;
-  max-width: 220px;
+  flex: 1 1 0;
+  min-width: 160px;
+  width: 100%;
+  max-width: none;
+  height: auto;
   background: white;
   padding: 0.75rem;
   border-radius: 8px;
@@ -129,7 +134,7 @@ main
 .header-image 
 {
   width: 100%;
-  max-width: 100%;
+  max-width: none;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
