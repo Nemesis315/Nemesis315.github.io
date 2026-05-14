@@ -120,10 +120,10 @@ main
 /* Stile logo con background bianco */
 .header-logos img 
 {
-  flex: 1 1 0;
+  flex: 0 1 48%;
   min-width: 160px;
-  width: 100%;
-  max-width: none;
+  width: 48%;
+  max-width: 48%;
   height: auto;
   background: white;
   padding: 0.75rem;
