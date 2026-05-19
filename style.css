@@ -83,61 +83,167 @@ main
 
 /* ================================================
    SEZIONE HEADER
-   Gradient background con logo e presentazione
+   Design moderno con layout verticale e effetti
    ================================================ */
 /* Header Section */
 .header 
 {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
   color: white;
-  padding: 2rem;
-  border-radius: 10px;
-  margin-bottom: 2rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 3rem 2rem;
+  border-radius: 15px;
+  margin-bottom: 3rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  animation: slideInDown 0.8s ease-out;
+}
+
+/* Effetto background animato */
+.header::before 
+{
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(52, 152, 219, 0.15) 0%, transparent 70%);
+  animation: float 6s ease-in-out infinite;
 }
 
 /* Layout flessibile per header content */
 .header-content 
 {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 2rem;
+  position: relative;
+  z-index: 2;
 }
 
-/* Contenitore per i logo */
+/* Contenitore per i logo con layout migliorato */
 .header-logos 
 {
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
   align-items: center;
-  justify-content: space-between;
-  width: 100%;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
-/* Stile logo con background bianco */
+/* Stile logo con effetto shadow e hover */
 .header-logos img 
 {
-  flex: 0 1 48%;
-  min-width: 160px;
-  width: 48%;
-  max-width: 48%;
-  height: auto;
+  height: 80px;
+  width: auto;
   background: white;
-  padding: 0.75rem;
-  border-radius: 8px;
+  padding: 0.8rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+  transform: perspective(1000px) rotateY(0deg);
 }
 
-/* Immagine large dell'header */
+.header-logos img:hover 
+{
+  transform: perspective(1000px) rotateY(10deg) translateY(-5px);
+  box-shadow: 0 12px 30px rgba(52, 152, 219, 0.4);
+  background: #e8f4f8;
+}
+
+/* Sezione titolo e sottotitoli */
+.header-content > div 
+{
+  text-align: center;
+}
+
+.header-content h1 
+{
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.header-content p 
+{
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+/* Immagine large dell'header con effetti */
 .header-image 
 {
   width: 100%;
-  max-width: none;
+  max-width: 100%;
   height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  border: 3px solid rgba(52, 152, 219, 0.3);
+  animation: slideInUp 0.9s ease-out 0.2s both;
+}
+
+.header-image:hover 
+{
+  transform: scale(1.02) translateY(-5px);
+  box-shadow: 0 20px 50px rgba(52, 152, 219, 0.4);
+}
+
+/* Animazione parallax per header-image */
+figure 
+{
+  position: relative;
+  overflow: hidden;
+}
+
+/* ================================================
+   ANIMAZIONI KEYFRAME
+   ================================================ */
+@keyframes slideInDown 
+{
+  from 
+  {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to 
+  {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInUp 
+{
+  from 
+  {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to 
+  {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float 
+{
+  0%, 100% 
+  {
+    transform: translate(0, 0);
+  }
+  50% 
+  {
+    transform: translate(20px, -20px);
+  }
 }
 
 /* ================================================
@@ -598,14 +704,30 @@ footer a:hover
     font-size: 1.5rem;
   }
 
+  .header 
+  {
+    padding: 2rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+
   .header-content 
   {
-    flex-direction: column;
+    gap: 1.5rem;
   }
 
   .header-logos 
   {
-    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .header-logos img 
+  {
+    height: 70px;
+  }
+
+  .header-content h1 
+  {
+    font-size: 2rem;
   }
 
   .card-container 
@@ -665,15 +787,36 @@ footer a:hover
     font-size: 1.5rem;
   }
 
+  .header 
+  {
+    padding: 1.5rem 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .header-content h1 
+  {
+    font-size: 1.5rem;
+  }
+
+  .header-logos 
+  {
+    gap: 1rem;
+  }
+
+  .header-logos img 
+  {
+    height: 60px;
+  }
+
+  .header-content p 
+  {
+    font-size: 0.95rem;
+  }
+
   main 
   {
     margin-top: 120px;
     padding: 0.5rem;
-  }
-
-  .header 
-  {
-    padding: 1rem;
   }
 
   .gallery
