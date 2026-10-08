@@ -1,10 +1,107 @@
+<!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Tech Conference 2026 - Pre-iscrizione</title>
+  <link rel="stylesheet" href="style3.css">
 </head>
 <body>
+  <main class="container">
+    <header class="header">
+      <h1 class="title">Tech Conference 2026</h1>
+      <p class="subtitle">Pre-iscrizione alla conferenza annuale per tecnologia e innovazione.</p>
+    </header>
 
+    <section class="info-section" aria-labelledby="info-title">
+      <h2 id="info-title">Informazioni sulla conferenza</h2>
+      <p>Tech Conference 2026 riunisce professionisti, studenti e appassionati per condividere idee e opportunità di crescita.</p>
+      <ul>
+        <li>Conferenze su tecnologia e innovazione</li>
+        <li>Sessioni pratiche e workshop</li>
+        <li>Contatti con esperti del settore</li>
+      </ul>
+    </section>
+
+    <section class="form-section" aria-labelledby="form-title">
+      <h2 id="form-title">Pre-iscrizione</h2>
+      <form action="conferma.html" method="POST">
+        <fieldset class="fieldset-block">
+          <legend>Dati anagrafici</legend>
+
+          <div class="form-group">
+            <label class="form-label" for="nome-cognome">Nome e Cognome</label>
+            <input class="input-field" type="text" id="nome-cognome" name="nome-cognome" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="email">Email</label>
+            <input class="input-field" type="email" id="email" name="email" placeholder="nome@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="telefono">Telefono</label>
+            <input class="input-field" type="tel" id="telefono" name="telefono" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="anno-nascita">Anno di nascita</label>
+            <input class="input-field" type="number" id="anno-nascita" name="anno-nascita" min="1940" max="2010" required>
+          </div>
+        </fieldset>
+
+        <fieldset class="fieldset-block">
+          <legend>Dettagli partecipazione</legend>
+
+          <div class="form-group">
+            <span class="form-label">Tipo biglietto</span>
+            <div class="option-group">
+              <label><input type="radio" name="biglietto" value="Student" required> Student</label>
+              <label><input type="radio" name="biglietto" value="Standard"> Standard</label>
+              <label><input type="radio" name="biglietto" value="VIP"> VIP</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <span class="form-label">Sessioni</span>
+            <div class="option-group">
+              <label><input type="checkbox" name="sessioni" value="AI"> AI</label>
+              <label><input type="checkbox" name="sessioni" value="Cloud"> Cloud</label>
+              <label><input type="checkbox" name="sessioni" value="Design"> Design</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="taglia">Taglia maglietta</label>
+            <select class="input-field" id="taglia" name="taglia">
+              <option value="S">S</option>
+              <option value="M" selected>M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="note">Note</label>
+            <textarea class="input-field" id="note" name="note" rows="4"></textarea>
+          </div>
+        </fieldset>
+
+        <fieldset class="fieldset-block">
+          <legend>Consensi e invio</legend>
+
+          <div class="form-group">
+            <label class="form-label" for="privacy">Privacy Policy</label>
+            <label><input type="checkbox" id="privacy" name="privacy" required> Accetto l’utilizzo dei miei dati per la pre-iscrizione.</label>
+          </div>
+
+          <div class="button-group">
+            <button class="button button-primary" type="submit">Invia</button>
+            <button class="button button-secondary" type="reset">Reset</button>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+  </main>
 </body>
 </html>
