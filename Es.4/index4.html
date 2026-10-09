@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Studio</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <h1>Contattaci</h1>
+
+    <form method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="motivo">Motivo del contatto:</label>
+        <select id="motivo" name="motivo" type="radio" required>
+            <div>
+                <option value="">Seleziona una opzione</option>
+                <option value="informazioni">Informazioni</option>
+                <option value="supporto">Supporto</option>
+                <option value="feedback">Feedback</option>
+            </div>
+        </select>
+
+        <label for="messaggio">Messaggio:</label>
+        <textarea id="messaggio" name="messaggio" rows="3" required></textarea>
+
+        <div>
+            <button type="submit">Invia</button>
+            <button type="reset">Annulla</button>
+        </div>
+    </form>
+
+</body>
+</html>

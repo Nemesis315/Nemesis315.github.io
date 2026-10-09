@@ -11,3 +11,34 @@
   padding: 20px;
   background: #ffffff;
 }
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.opzioni,
+.pulsanti {
+  display: flex;
+  gap: 10px;
+}
+
+.pulsanti {
+  justify-content: flex-end;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border: 2px solid #00aaff;
+  outline: none;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #00aaff;
+  color: #ffffff;
+}
