@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag HTML e CSS - spiegazione</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">Tag HTML e CSS degli esercizi precedenti</h1>
+    </header>
+
+    <main class="content">
+        <section class="info-section">
+            <h2>1. Struttura base di una pagina HTML</h2>
+            <p>Le pagine web sono costruite con tag HTML, cioè elementi che danno una struttura logica al contenuto.</p>
+            <ul>
+                <li><strong>&lt;!DOCTYPE html&gt;</strong>: indica che il documento è in HTML5.</li>
+                <li><strong>&lt;html lang="it"&gt;</strong>: contiene tutta la pagina e indica la lingua.</li>
+                <li><strong>&lt;head&gt;</strong>: contiene informazioni non visibili, come charset, viewport e collegamenti CSS.</li>
+                <li><strong>&lt;meta charset="UTF-8"&gt;</strong>: permette di usare caratteri speciali come le lettere accentate.</li>
+                <li><strong>&lt;meta name="viewport" ... &gt;</strong>: rende la pagina adattabile ai dispositivi mobili.</li>
+                <li><strong>&lt;title&gt;</strong>: imposta il titolo della scheda del browser.</li>
+                <li><strong>&lt;link rel="stylesheet" href="style.css"&gt;</strong>: collega il file CSS esterno.</li>
+                <li><strong>&lt;body&gt;</strong>: contiene tutto ciò che l'utente vede.</li>
+            </ul>
+        </section>
+
+        <section class="info-section">
+            <h2>2. Tag usati per creare la pagina</h2>
+            <ul>
+                <li><strong>&lt;header&gt;</strong>: parte iniziale della pagina, con titolo o introduzione.</li>
+                <li><strong>&lt;nav&gt;</strong>: contiene il menu di navigazione.</li>
+                <li><strong>&lt;ul&gt;</strong> e <strong>&lt;li&gt;</strong>: creano liste puntate.</li>
+                <li><strong>&lt;a href="..."&gt;</strong>: crea un link ad altre pagine o siti.</li>
+                <li><strong>&lt;main&gt;</strong>: contiene il contenuto principale della pagina.</li>
+                <li><strong>&lt;section&gt;</strong>: separa blocchi di contenuto.</li>
+                <li><strong>&lt;h1&gt; - &lt;h6&gt;</strong>: titoli e sottotitoli in ordine di importanza.</li>
+                <li><strong>&lt;p&gt;</strong>: paragrafo di testo.</li>
+                <li><strong>&lt;strong&gt;</strong>: testo in grassetto.</li>
+                <li><strong>&lt;img&gt;</strong>: inserisce un'immagine con attributi come src e alt.</li>
+                <li><strong>&lt;div&gt;</strong>: contenitore generico usato per creare layout.</li>
+                <li><strong>&lt;footer&gt;</strong>: parte finale con contatti, crediti o link utili.</li>
+            </ul>
+        </section>
+
+        <section class="info-section">
+            <h2>3. Tag dei moduli e dei form</h2>
+            <p>Nei vari esercizi sono stati usati anche i form per raccogliere dati dell'utente.</p>
+            <ul>
+                <li><strong>&lt;form&gt;</strong>: contiene i campi del modulo.</li>
+                <li><strong>&lt;label&gt;</strong>: descrive il campo del modulo.</li>
+                <li><strong>&lt;input&gt;</strong>: campo di inserimento; può essere text, email, password, date, number, color, radio, checkbox, file.</li>
+                <li><strong>&lt;select&gt;</strong> e <strong>&lt;option&gt;</strong>: menu a tendina.</li>
+                <li><strong>&lt;textarea&gt;</strong>: area per scrivere testi lunghi.</li>
+                <li><strong>&lt;fieldset&gt;</strong>: raggruppa più campi correlati.</li>
+                <li><strong>&lt;legend&gt;</strong>: titolo del gruppo di campi.</li>
+                <li><strong>&lt;button&gt;</strong>: bottone con azioni come invio o reset.</li>
+            </ul>
+        </section>
+
+        <section class="info-section">
+            <h2>4. Cos'è il CSS</h2>
+            <p>Il CSS (Cascading Style Sheets) serve a dare stile alla pagina: colori, spazi, margini, font, allineamento e layout.</p>
+            <ul>
+                <li><strong>body</strong>: definisce lo sfondo, il font e il colore del testo.</li>
+                <li><strong>margin</strong>: spazio esterno attorno agli elementi.</li>
+                <li><strong>padding</strong>: spazio interno tra il contenuto e il bordo.</li>
+                <li><strong>background</strong>: colore o sfondo dell'elemento.</li>
+                <li><strong>color</strong>: colore del testo.</li>
+                <li><strong>border</strong>: bordo dell'elemento.</li>
+                <li><strong>border-radius</strong>: angoli arrotondati.</li>
+                <li><strong>box-shadow</strong>: ombra per dare profondità.</li>
+                <li><strong>display: flex</strong>: organizza gli elementi in fila o in colonna.</li>
+                <li><strong>justify-content</strong>: allinea orizzontalmente gli elementi.</li>
+                <li><strong>align-items</strong>: allinea verticalmente gli elementi.</li>
+                <li><strong>gap</strong>: distanza tra gli elementi interni.</li>
+                <li><strong>width</strong> e <strong>max-width</strong>: larghezza degli elementi.</li>
+                <li><strong>:hover</strong>: stile applicato quando il mouse passa sopra.</li>
+                <li><strong>:focus</strong>: stile applicato quando un campo del form viene selezionato.</li>
+                <li><strong>@media</strong>: permette di creare versioni responsive per dispositivi mobili.</li>
+            </ul>
+        </section>
+
+        <section class="info-section">
+            <h2>5. Cosa hanno in comune gli esercizi precedenti</h2>
+            <p>Tutti gli esercizi usavano la stessa logica: prima costruivano la struttura HTML, poi applicavano uno stile CSS.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Esercizio</th>
+                        <th>Obiettivo</th>
+                        <th>CSS usato</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Es.1</td>
+                        <td>Pagina aziendale con nav e sezioni</td>
+                        <td>Layout, gradient, animazioni, hover</td>
+                    </tr>
+                    <tr>
+                        <td>Es.2</td>
+                        <td>Modulo di registrazione</td>
+                        <td>Grid, campi form, bottoni colorati</td>
+                    </tr>
+                    <tr>
+                        <td>Es.3</td>
+                        <td>Pre-iscrizione conferenza</td>
+                        <td>Flexbox, valid/invalid, responsive design</td>
+                    </tr>
+                    <tr>
+                        <td>Es.4</td>
+                        <td>Form di contatto</td>
+                        <td>Semplice stile, hover e focus</td>
+                    </tr>
+                    <tr>
+                        <td>Es.5</td>
+                        <td>Spiegazione teorica</td>
+                        <td>Struttura base, layout semplice e leggibile</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="info-section">
+            <h2>6. Conclusione</h2>
+            <p>HTML definisce la struttura della pagina; CSS definisce il suo aspetto. Insieme permettono di creare siti web completi, ordinati e navigabili. Gli esercizi precedenti sono esempi di come si possono combinare tag e proprietà CSS per ottenere layout professionali e form interattivi.</p>
+        </section>
+    </main>
+</body>
+</html>
